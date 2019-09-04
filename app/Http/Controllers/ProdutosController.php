@@ -17,11 +17,11 @@ class ProdutosController extends Controller
 
         // Carrega o produto do id dado (tem que ser a primary key,normalmente é o id)
         // $p = Produto::find(3);
-        // $categorias = Categoria::all();
+        $categorias = Categoria::all();
 
         // dd($categorias);
 
         // Retornando a view listarProduto.blade.php
-        return view('listarProdutos',compact('produtos'));
+        return view('listarProdutos',compact('produtos','categorias'));
     }
 }

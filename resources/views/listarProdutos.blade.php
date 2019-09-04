@@ -29,6 +29,6 @@
         </tbody>
     </table>
 
-    {{ dd($produtos)}}
+    {{ dd($categorias)}}
 </body>
 </html>
